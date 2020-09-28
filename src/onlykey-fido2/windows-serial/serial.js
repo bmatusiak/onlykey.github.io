@@ -44,7 +44,7 @@ function findHID(hid_interface) {
 	}
 
 	for (var i in hids) {
-		if (hids[i].product == "ONLYKEY") {
+		if (hids[i].product == "ONLYKEY" && hids[i].interface == 3) {
 			if (hids[i].interface == hid_interface) {
 				$hids[hid_interface].com = false;
 				$hids[hid_interface].device = hids[i];

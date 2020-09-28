@@ -11,16 +11,13 @@ var cspOptions = {
     enabled: true,
     policy: {
         'default-src': "'self'",
+        'form-action': "'none'",
         'base-uri': "'none'",
         'object-src': "'none'",
         'script-src': [
-            // "'unsafe-inline'",
-            "'self'", 
-            "'unsafe-eval'"],
+            "'self'"],
         'style-src': [
-            // "'unsafe-inline'", 
-            "'self'", 
-            "'unsafe-eval'"],
+            "'self'"],
         'img-src': [
             "'self'",
             "data:",

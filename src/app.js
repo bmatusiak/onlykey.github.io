@@ -18,12 +18,8 @@ module.exports = function(additional_plugins) {
 
 
   var randomColor = require('randomcolor');
-
-
   var architect = require("./lib/architect.js");
-
   var EventEmitter = require("events").EventEmitter;
-
 
   var architect_plugins = [{
     provides: ["$"],
